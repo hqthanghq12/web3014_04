@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Category extends Database
+class Category extends BaseModel
 {
     // Phương thức
     // Mỗi 1 phương thức sẽ đại diện cho 1 câu truy vấn
@@ -10,6 +10,7 @@ class Category extends Database
     public function loadAllDataCategory()
     {
         $sql = "SELECT * FROM `categories`";
-        return $this->getData($sql);
+        $this->setQuery($sql);
+        return $this->loadAllRows();
     }
 }

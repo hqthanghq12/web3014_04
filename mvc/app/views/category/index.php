@@ -17,9 +17,9 @@
         </tr>
         <?php foreach ($data as $item) {?>
         <tr>
-            <td><?php echo $item['id'] ?></td>
-            <td><?php echo $item['name'] ?></td>
-            <td><?php echo $item['status'] ?></td>
+            <td><?php echo $item->id ?></td>
+            <td><?php echo $item->name ?></td>
+            <td><?php echo $item->status ?></td>
             <td>
                 <button>Sửa</button>
                 <button>Xóa</button>
