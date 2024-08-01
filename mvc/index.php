@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'env.php';
 //require_once 'models/Database.php';
 //require_once 'models/Category.php';

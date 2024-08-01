@@ -28,6 +28,8 @@ $router->post('edit-product/{id}',[App\Controllers\ProductController::class,'edi
 // khu vực cần quan tâm -----------
 //$router->get('test', [App\Controllers\ProductController::class, 'index']);
 $router->get('index', [App\Controllers\CategoryController::class, 'index']);
+$router->get('create', [App\Controllers\CategoryController::class, 'create']);
+$router->post('store', [App\Controllers\CategoryController::class, 'store']);
 # NB. You can cache the return value from $router->getData() so you don't have to create the routes each request - massive speed gains
 $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
 
